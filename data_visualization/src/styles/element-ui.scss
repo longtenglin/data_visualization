@@ -1,0 +1,150 @@
+@import "./config";
+.el-select{
+  width: 12vw;
+  height: 4vh;
+  .el-input{
+    width: 100%;
+    height: 100%;
+    input::-webkit-input-placeholder,
+    textarea::-webkit-input-placeholder {
+      color: black;                           // The style of the default value of the select tag.
+    }
+
+    .el-input__inner{
+      background-color: $el-select-background;    // Background color of Select and DateTimePicker.
+      color: $el-font-color;                      // Opened DateTimerPicker: Font color of date and time
+      border: #33ccff;                            // Border style of select and DateTimePicker
+      font-size: 1.5vh;
+      height: 4vh;
+    }
+    .el-select__caret{
+      color: white;
+      font-size: 1.5vh;
+    }
+    .el-input__icon{
+       width: 1.5vw;
+       line-height: 3.3vh;
+    }
+  }
+}
+.el-date-editor{
+  width: 22vw;
+  height: 4vh;
+}
+
+.el-date-editor,.el-input__inner{
+  background-color: $el-select-background;    // Background color of Select and DateTimePicker.
+  color: $el-font-color;                      // Opened DateTimerPicker: Font color of date and time
+  border: #33ccff;                            // Border style of select and DateTimePicker
+  font-size: 1.5vh;
+  height: 4vh;
+  .el-input__icon{
+    width: 1.5vw;
+  }
+  .el-range__icon,.el-range__close-icon{
+    font-size: 1.5vh;
+    color: white;
+    line-height: 3.4vh;
+  }
+  .el-range-separator{
+    color: white;
+    font-size: 1.5vh;
+    line-height: 3.4vh;
+  }
+  .el-range-input{
+    background-color: $el-select-background;  // Date and time text box.
+    color: $el-font-color;                    // The font style of date and time.
+    font-size: 1.5vh;
+  }
+}
+
+//日期选择器打开
+.el-picker-panel{
+  color: $el-font-color;
+  width: 40vw;
+  line-height: 3.5vh;
+  .el-picker-panel__body-wrapper {
+      background-color: $el-select-background;
+      .el-date-range-picker__time-header{
+          .el-date-range-picker__editors-wrap, .el-date-range-picker__editors-wrap.is-right{
+              .el-date-range-picker__time-picker-wrap{
+                .el-time-panel, .el-popper{
+                  background-color: $el-select-background;
+                  font-size: 1.5vh;
+                  color: #333333;
+                  width: 9vw;
+                  .el-time-spinner__item{
+                    &.active{
+                      color: black;
+                      font-weight: bold;
+                    }
+                  }
+                  .el-time-panel__footer{
+                    .cancel{
+                      color: black;
+                    }
+                    .confirm{
+                      color: #1370fb;
+                    }
+                  }
+                }
+              }
+          }
+      }
+      .el-date-range-picker__content.is-left, .el-date-range-picker__content.is-right {
+          color: $el-test-red;
+          font-weight: bold;
+          font-size: 1.5vh;
+          .el-date-range-picker__header{
+              .el-picker-panel__icon-btn{
+                  font-size: 2vh;
+                  font-weight: bold;
+                  margin-top: 0.5vh;
+              }
+              div{
+                font-weight: bold;
+                font-size: 2vh;
+              }
+          }
+            .el-date-table {
+                th { //日、一、二、三、四、五、六
+                  color: $el-test-red;
+                  font-weight: bold;
+                }
+                .prev-month { // 上月遗留
+                  color: $el-test-red;
+                }
+                .next-month { // 下月预加载
+                  color: $el-test-red;
+                }
+          }
+      }
+  }
+  .el-picker-panel__footer{
+      background-color: $el-select-background;
+      font-size: 1.5vh;
+      .el-button--text{
+        span{
+          color: #1370fb;
+        }
+      }
+      .el-button--default{
+        span{
+          color: chocolate;
+        }
+      }
+  }
+
+}
+
+// Opened Select tag
+.el-select-dropdown,.el-popper{
+  background-color: $el-select-background;
+  .el-select-dropdown__item.hover, .el-select-dropdown__item:hover{
+    background-color: $el-select-background;
+  }
+  .el-select-dropdown__item.selected{
+    color: white;
+    font-weight: bold;
+  }
+}

@@ -1,0 +1,138 @@
+/**
+ * @Declaration:
+ * @Author: Mr.zhao_nan
+ */
+$navWidth: 10vw;
+$navWidthClose: 0vw;
+@mixin webkit($type, $value) {
+  -webkit-#{$type}: $value;
+  -moz-#{$type}: $value;
+  -o-#{$type}: $value;
+  -ms-#{$type}: $value;
+  #{$type}: $value;
+}
+
+@keyframes action1
+{
+  0%   {background: rgba(0,0,0,1);}
+  50%  {background: rgba(0,0,0,0.5);}
+  100% {background: rgba(0,0,0,0);}
+}
+
+@-moz-keyframes action1 /* Firefox */
+{
+  0%   {background: rgba(0,0,0,0);}
+  50%  {background: rgba(0,0,0,0.5);}
+  100% {background: rgba(0,0,0,0);}
+}
+
+@-webkit-keyframes action1 /* Safari and Chrome */
+{
+  0%   {background: rgba(0,0,0,0);}
+  50%  {background: rgba(0,0,0,0.5);}
+  100% {background: rgba(0,0,0,0);}
+}
+
+@-o-keyframes action1 /* Opera */
+{
+  0%   {background: rgba(0,0,0,0);}
+  50%  {background: rgba(0,0,0,0.5);}
+  100% {background: rgba(0,0,0,0);}
+}
+
+@keyframes blackToTransparent
+{
+  from {background: rgba(0,0,0,0.99);}
+  to {background:rgba(0,0,0,0);}
+}
+
+@-webkit-keyframes blackToTransparent /* Safari and Chrome */
+{
+  from {background: rgba(0,0,0,0.99);}
+  to {background:rgba(0,0,0,0);}
+}
+//@-webkit-keyframes myfirst /* Safari and Chrome */
+//{
+//  0%   {background:red; left:0px; top:0px;}
+//  25%  {background:yellow; left:200px; top:0px;}
+//  50%  {background:blue; left:200px; top:200px;}
+//  75%  {background:green; left:0px; top:200px;}
+//  100% {background:red; left:0px; top:0px;}
+//}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+//菜单头部图标位置
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+.div-left {
+  float: left;
+}
+
+.div-right {
+  float: right;
+}
+
+.div-margin-horizon-1 {
+  margin-left: 1vw;
+  margin-right: 1vw;
+}
+
+.div-margin-top-1 {
+  margin-top: 1vh;
+}
+
+.div-padding-top-1 {
+  padding-top: 1vh;
+}
+
+.div-padding-top-2 {
+  padding-top: 2vh;
+}
+
+.font-auto {
+  color: white;
+  font-size: 2vh;
+}
+
+.font-color-white {
+  color: #7FFFD4;
+}
+
+.font-color-auto {
+  color: #7FFFD4;
+}
+
+.font-size-1 {
+  font-size: 1vh;
+}
+
+.font-size-15 {
+  font-size: 1.5vh;
+}
+
+.font-size-2 {
+  font-size: 2vh;
+}
+
+.font-size-25 {
+  font-size: 2.5vh;
+}
+
+.font-size-3 {
+  font-size: 3vh;
+}
+//定义组件颜色
+$el-font-color: black;
+$el-select-background: #00cccc;
+$el-test-red: black;
+$el-test-blue: #8cc5ff;
+$main-font-color: #7FFFD4;
