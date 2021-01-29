@@ -6,7 +6,7 @@
 
 
 
-<img src="D:\workspace\Github\data_visualization\README_IMG\image-20210129112905352.png" alt="image-20210129112905352" />
+<img src="README_IMG\image-20210129112905352.png" alt="image-20210129112905352" />
 
 
 
